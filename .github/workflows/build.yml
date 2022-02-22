@@ -22,7 +22,9 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build files
-      run: npm run build
+      run: |
+        npm run build
+        cp captain-definition demo
     - name: Commit built files to the dist branch
       if:  github.ref == 'refs/heads/master'
       uses: s0/git-publish-subdir-action@develop
