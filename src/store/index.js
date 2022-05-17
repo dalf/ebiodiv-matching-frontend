@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+const backend_url = process.env.NODE_ENV === "production" ? "api/v2" : "https://candy.text-analytics.ch/ebiodiv/matching/proxy/v2"
+
 export default new Vuex.Store({
   state: {
     theme_color: {
@@ -11,10 +13,10 @@ export default new Vuex.Store({
     },
     step: 1,
     urls: {
-        institutions: "https://candy.text-analytics.ch/ebiodiv/matching/proxy/v2/institutionList",
-        datasets: "https://candy.text-analytics.ch/ebiodiv/matching/proxy/v2/datasets",
-        occurrences: "https://candy.text-analytics.ch/ebiodiv/matching/proxy/v2/occurrences",
-        matching: "https://candy.text-analytics.ch/ebiodiv/matching/proxy/v2/matching",
+        institutions: backend_url + "/institutionList",
+        datasets: backend_url + "/datasets",
+        occurrences: backend_url + "/occurrences",
+        matching: backend_url + "/matching",
         gbif: "https://api.gbif.org/v1/occurrence/",
     },
     urls_parameters: {
