@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{"0bd2":function(e,t,n){"use strict";n.r(t);var a=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},i=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"about"},[n("h1",[e._v("This is an about page")]),n("p",[e._v("eBioDiv matching between material citation and specimens")])])}],s=n("2877"),c={},u=Object(s["a"])(c,a,i,!1,null,null,null);t["default"]=u.exports}}]);
-//# sourceMappingURL=about.df33ee2f.js.map
