@@ -51,7 +51,7 @@ function field_items(output_filename) {
         i++;
     }
     const content = JSON.stringify(rows, null, "  ");
-    fs.writeFileSync('scoring.json', content, err => {
+    fs.writeFileSync(output_filename, content, err => {
         if (err) {
           console.error(err);
         }

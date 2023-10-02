@@ -35,8 +35,7 @@ jobs:
     - name: Create scoring.json
       # the output file name is relatived to create_scoring.sh,
       run: |
-        ./create_scoring/create_scroring_json.sh "../scoring.json"
-        cp "scoring.json" "${{ matrix.folder }}"
+        ./create_scoring/create_scroring_json.sh "../${{ matrix.folder }}/scoring.json"
         echo "#####################"
         find ./dist
     - name: Commit built files to the ${{ matrix.branch }} branch
