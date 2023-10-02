@@ -1,7 +1,12 @@
 {
-    "institutions": "https://tb.plazi.org/GgServer/gbifOccLinkData/institutionList",
-    "datasets": "https://tb.plazi.org/GgServer/gbifOccLinkData/datasets",
-    "occurrences": "https://tb.plazi.org/GgServer/gbifOccLinkData/occurrences",
-    "matching": "https://candy.text-analytics.ch/ebiodiv/matching/proxy/v2/occurrenceRelations",
-    "fetch_occurrence": "https://tb.plazi.org/GgServer/gbifOccLinkData/occurrences"
+    "search": "https://tb.plazi.org/GbifOccLink/data/occurrences/search",
+    "facet": "https://tb.plazi.org/GbifOccLink/data/occurrences/searchFieldValues",
+    "institutions": "https://tb.plazi.org//GbifOccLink/data/institutionList",
+    "occurrences": "https://tb.plazi.org/GbifOccLink/data/occurrences",
+    "occurrencesList": "https://tb.plazi.org/GbifOccLink/data/occurrenceList",
+    "matching": "https://tb.plazi.org/GbifOccLink/data/occurrenceRelations",
+    "comments": "https://tb.plazi.org/GbifOccLink/data/notes",
+    "sib_backend_url": "api/",
+    "statusCode": "https://tb.plazi.org/GbifOccLink/data/statusCodes"
+
 }
